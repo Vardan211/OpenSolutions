@@ -1,4 +1,5 @@
 ﻿using OpenSolutions.DataAccess.Entities;
+using OpenSolutions.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,8 +7,14 @@ using System.Threading.Tasks;
 
 namespace OpenSolutions.Domain
 {
-    interface IRecordService
+    public interface IRecordService
     {
-        public List<RecordEntity> GetAll();
+        List<RecordEntity> GetAll();
+        Task Add(RecordEntity recordEntity);
+        Task Delete(RecordEntity recordEntity);
+        Task Change(RecordEntity recordEntity);
+        List<RecordEntity> Sorting(Enum sort);
+        IEnumerable<RecordEntity> GetRecords();
+
     }
 }
