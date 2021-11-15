@@ -7,7 +7,7 @@ namespace OpenSolutions.Domain
 {
     public interface IRecordService
     {
-        Task<RecordEntity> GetById(int id);
+        Task<RecordModel> GetById(int id);
         Task<GetRecordsResponse> GetAll(SortState sort, int skip = 0, int take = 10);
         Task Add(RecordEntity recordEntity);
         Task Delete(RecordEntity recordEntity);

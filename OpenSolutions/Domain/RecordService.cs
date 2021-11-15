@@ -32,7 +32,7 @@ namespace OpenSolutions.Domain
 
         public async Task<double> GetAvgAge()
         {
-            return await _context.Records.Select(x => Math.Floor((DateTime.UtcNow - x.BirthDate).TotalDays / 365)).AverageAsync();
+            return _context.Records.Select(x => Math.Floor((DateTime.UtcNow - x.BirthDate).TotalDays / 365)).ToList().Average();
         }
 
         public async Task Delete(RecordEntity recordEntity)
@@ -41,7 +41,7 @@ namespace OpenSolutions.Domain
             await _context.SaveChangesAsync();
         }
 
-        public async Task<RecordEntity> GetById(int id)
+        public async Task<RecordModel> GetById(int id)
         {
             return await _context.Records.FirstOrDefaultAsync(x => x.Id == id);
         }

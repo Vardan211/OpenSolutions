@@ -5,7 +5,7 @@ namespace OpenSolutions.Domain.Models
 {
     public class GetRecordsResponse
     {
-        public List<RecordEntity> Records { get; set; }
+        public List<RecordModel> Records { get; set; }
         public int Count { get; set; }
     }
 }
