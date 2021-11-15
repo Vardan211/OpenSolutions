@@ -2,6 +2,7 @@
 using OpenSolutions.DataAccess.Entities;
 using OpenSolutions.Domain;
 using System.Threading.Tasks;
+using OpenSolutions.Domain.Models;
 
 namespace OpenSolutions.Controllers
 {
@@ -16,10 +17,10 @@ namespace OpenSolutions.Controllers
             _recordService = recordService;
         }
         
-        [HttpGet]
-        public async Task<IActionResult> Get(SortState sort, int skip = 0, int take = 10)
+        [HttpPost("get-all")]
+        public async Task<IActionResult> Get([FromBody]RecordFilterModel filters, SortState sort, int skip = 0, int take = 10)
         {
-            var result = await _recordService.GetAll(sort, skip, take);
+            var result = await _recordService.GetAll(filters, sort, skip, take);
             return Ok(result);
         }
 
@@ -58,9 +59,9 @@ namespace OpenSolutions.Controllers
         }
 
         [HttpGet("avg-age")]
-        public async Task<IActionResult> GetAvgAge()
+        public IActionResult GetAvgAge()
         {
-            var avgAge = await _recordService.GetAvgAge();
+            var avgAge = _recordService.GetAvgAge();
 
             return Ok(new { avgAge });
         }

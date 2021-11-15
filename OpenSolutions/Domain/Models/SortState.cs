@@ -1,4 +1,4 @@
-﻿namespace OpenSolutions.Domain
+﻿namespace OpenSolutions.Domain.Models
 {
     public enum SortState
     {
