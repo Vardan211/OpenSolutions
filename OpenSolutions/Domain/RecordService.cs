@@ -79,7 +79,7 @@ namespace OpenSolutions.Domain
 
             if (!string.IsNullOrWhiteSpace(filters.BirthDate))
             {
-                query = query.Where(x => EF.Functions.Like(x.BirthDate.ToShortDateString(), $"%{filters.BirthDate}%"));
+                query = query.Where(x => EF.Functions.Like(x.BirthDate.ToString(), $"%{filters.BirthDate}%"));
             }
 
             query = sort switch
