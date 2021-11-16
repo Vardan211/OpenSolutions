@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json.Converters;
 using OpenSolutions.DataAccess;
 using OpenSolutions.Domain;
 using Swashbuckle.AspNetCore.SwaggerGen;
@@ -29,19 +30,25 @@ namespace OpenSolutions
         }
 
         public IConfiguration Configuration { get; }
-
+        
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(builder => builder
+                .SerializerSettings.Converters.Add(new StringEnumConverter()));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "OpenSolutions", Version = "v1" });
             });
-
+            services.AddSwaggerGenNewtonsoftSupport();
             services.AddDbContext<DataContext>(x =>
                 x.UseNpgsql(Configuration.GetConnectionString("Db")));
             services.AddScoped<IRecordService, RecordService>();
+            services.AddTransient<DataSeeder>();
+
+            var provider = services.BuildServiceProvider();
+            var dataSeeder = provider.GetRequiredService<DataSeeder>();
+            dataSeeder.Seed().Wait();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

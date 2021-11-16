@@ -1,0 +1,1004 @@
+{
+	"info": {
+		"_postman_id": "f6cfde0c-9883-49fe-b249-6dfe8206f034",
+		"name": "OpenSolutions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/Records",
+			"item": [
+				{
+					"name": "GetAll",
+					"item": [
+						{
+							"name": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=10",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=10",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"get-all"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "IdAsc"
+										},
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "take",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{baseUrl}}/api/Records/get-all?sort=IdDesc&skip=0&take=10",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=20",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"get-all"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "IdAsc"
+										},
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "take",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{baseUrl}}/api/Records/get-all?sort=NameAsc&skip=10&take=20",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/get-all?sort=NameAsc&skip=10&take=20",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"get-all"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "NameAsc"
+										},
+										{
+											"key": "skip",
+											"value": "10"
+										},
+										{
+											"key": "take",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{baseUrl}}/api/Records/get-all?sort=LastNameAsc&skip=0&take=20",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/get-all?sort=LastNameAsc&skip=0&take=20",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"get-all"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "LastNameAsc"
+										},
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "take",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{baseUrl}}/api/Records/get-all?sort=BirthDateAsc&skip=0&take=20",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/get-all?sort=BirthDateAsc&skip=0&take=20",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"get-all"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "BirthDateAsc"
+										},
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "take",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=20",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\": \"ка\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=20",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"get-all"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "IdAsc"
+										},
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "take",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=10",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"lastName\": \"ва\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=10",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"get-all"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "IdAsc"
+										},
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "take",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=10",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"birthDate\": \"20\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=10",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"get-all"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "IdAsc"
+										},
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "take",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=20",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"birthDate\":\"2011-05\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=20",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"get-all"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "IdAsc"
+										},
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "take",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=10",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"birthDate\": \"2001-01-11\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=10",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"get-all"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "IdAsc"
+										},
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "take",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GetById",
+					"item": [
+						{
+							"name": "https://localhost:44303/api/Records/2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/3",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://localhost:44303/api/Records/2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AddRecord",
+					"item": [
+						{
+							"name": "https://localhost:44303/api/Records",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 32,\r\n  \"lastName\": \"Комаров\",\r\n  \"firstName\": \"Максим\",\r\n  \"birthDate\": \"1986-08-02T08:13:59.889Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DeleteRecord",
+					"item": [
+						{
+							"name": "https://localhost:44303/api/Records",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 32,\r\n  \"lastName\": \"Комаров\",\r\n  \"firstName\": \"Максим\",\r\n  \"birthDate\": \"2021-11-16T08:23:09.726Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "UpdateRecord",
+					"item": [
+						{
+							"name": "https://localhost:44303/api/Records",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"lastName\": \"Евдокимова\",\r\n    \"firstName\": \"Мария\",\r\n    \"birthDate\": \"1957-04-19T17:20:15.494Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "/api/Records",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 58901681,\n    \"lastName\": \"sit id velit cupidatat\",\n    \"firstName\": \"est\",\n    \"birthDate\": \"1957-04-19T17:20:15.494Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Records",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Records"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 58901681,\n    \"lastName\": \"sit id velit cupidatat\",\n    \"firstName\": \"est\",\n    \"birthDate\": \"1957-04-19T17:20:15.494Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/api/Records",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 58901681,\n    \"lastName\": \"sit id velit cupidatat\",\n    \"firstName\": \"est\",\n    \"birthDate\": \"1957-04-19T17:20:15.494Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Records",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Records"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 58901681,\n    \"lastName\": \"sit id velit cupidatat\",\n    \"firstName\": \"est\",\n    \"birthDate\": \"1957-04-19T17:20:15.494Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/api/Records",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 58901681,\n    \"lastName\": \"sit id velit cupidatat\",\n    \"firstName\": \"est\",\n    \"birthDate\": \"1957-04-19T17:20:15.494Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Records",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Records"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 58901681,\n    \"lastName\": \"sit id velit cupidatat\",\n    \"firstName\": \"est\",\n    \"birthDate\": \"1957-04-19T17:20:15.494Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/api/Records/get-all",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"Lorem irure et\",\n    \"firstName\": \"ullamco labore\",\n    \"lastName\": \"dolor\",\n    \"caseIgnore\": true,\n    \"birthDate\": \"non nisi consectetur cil\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Records",
+								"get-all"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "IdAsc"
+								},
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"Lorem irure et\",\n    \"firstName\": \"ullamco labore\",\n    \"lastName\": \"dolor\",\n    \"caseIgnore\": true,\n    \"birthDate\": \"non nisi consectetur cil\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/get-all?sort=IdAsc&skip=0&take=10",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"get-all"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "IdAsc"
+										},
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "take",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/api/Records/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44303/api/Records/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44303",
+							"path": [
+								"api",
+								"Records",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "85789205",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/api/Records/avg-age",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44303/api/Records/avg-age",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44303",
+							"path": [
+								"api",
+								"Records",
+								"avg-age"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Records/avg-age",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Records",
+										"avg-age"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
