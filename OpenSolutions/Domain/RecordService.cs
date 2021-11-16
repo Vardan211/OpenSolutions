@@ -64,12 +64,22 @@ namespace OpenSolutions.Domain
             
             if (!string.IsNullOrWhiteSpace(filters.FirstName))
             {
-                query = query.Where(x=> EF.Functions.Like(x.FirstName,$"%{filters.FirstName}%"));
+                if (filters.CaseIgnore)
+                {
+                    query = query.Where(x => EF.Functions.ILike(x.FirstName, $"%{filters.FirstName}%"));
+                }
+                else
+                    query = query.Where(x => EF.Functions.Like(x.FirstName, $"%{filters.FirstName}%"));
             }
 
             if (!string.IsNullOrWhiteSpace(filters.LastName))
             {
-                query = query.Where(x => EF.Functions.Like(x.LastName, $"%{filters.LastName}%"));
+                if (filters.CaseIgnore)
+                {
+                    query = query.Where(x => EF.Functions.ILike(x.LastName, $"%{filters.LastName}%"));
+                }
+                else
+                    query = query.Where(x => EF.Functions.Like(x.LastName, $"%{filters.LastName}%"));
             }
 
             if (!string.IsNullOrWhiteSpace(filters.Id))
